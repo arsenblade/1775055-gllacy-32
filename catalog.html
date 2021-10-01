@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="header">
     <nav class="navigation">
       <ul class="navigation-list">
         <li>
@@ -31,7 +31,7 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li>
-          <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="-headercontacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -78,6 +78,14 @@
         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
+        <fieldset>
+          <legend catalog-filter-title>Сортировка:</legend>
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="popular">по популярности</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+        </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
           <button class="range-toggle toggle-min" type="button">
@@ -101,26 +109,26 @@
             <li class="catalog-filter-fatness-item">
               <label class="control">
                 <input type="radio" class="visually-hidden control-input" name="fat percentage" value="0%">
-                <span class="control-label">0%</span>
+                0%
               </label>
             </li>
             <li class="catalog-filter-fatness-item">
               <label class="control">
                 <input type="radio" class="visually-hidden control-input" name="fat percentage" value="up to 10%"
                   checked>
-                <span class="control-label">до 10%</span>
+                до 10%
               </label>
             </li>
             <li class="catalog-filter-fatness-item">
               <label class="control">
                 <input type="radio" class="visually-hidden control-input" name="fat percentage" value="up to 30%">
-                <span class="control-label">до 30%</span>
+                до 30%
               </label>
             </li>
             <li class="catalog-filter-fatness-item">
               <label class="control">
                 <input type="radio" class="visually-hidden control-input" name="fat percentage" value="above 30%">
-                <span class="control-label">выше 30%</span>
+                выше 30%
               </label>
             </li>
           </ul>
