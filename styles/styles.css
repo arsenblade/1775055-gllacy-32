@@ -25,9 +25,16 @@ a{
   color:#2D3440;
   text-decoration: none;
 }
+li{
+  list-style: none;
+}
 .navigation-link{
   color:#2D3440;
   text-decoration: none;
+}
+.navigation-user li{
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
 }
 .header-contacts-address-phone{
   font-weight: 700;
@@ -50,17 +57,39 @@ a{
   position: relative;
 }
 .present-button{
-  background: #FCFCFC;
-  border-radius: 26px;
-  padding:12px 32px;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  display: inline-block;
   position: absolute;
   left:40px;
   bottom: 40px;
 }
 .button-link{
   font-weight: 700;
+  background: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  padding:12px 32px;
+}
+.product-list li{
+  background: white;
+  position: relative;
+  width: 270px;
+  height: 281px;
+  border-radius: 8px;
+}
+.product-card-link, .product-card-price{
+  position:absolute;
+  text-align:center;
+  bottom: 40px;
+}
+.product-card-image{
+  position: absolute;
+  left:51px;
+  top:-51px;
+}
+.product-card-button{
+  position: absolute;
+  bottom:40px;
+  right:20px;
 }
 .about-us-border{
   background:url("../image/waferFon.png");
@@ -162,5 +191,21 @@ a{
   position: absolute;
   left: 64px;
   top:64px;
+}
+.breadcrumbs li{
+  text-decoration:underline;
+  font-weight: bold;
+}
+.catalog-filter-group{
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+.catalog-filter-dispatch{
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  padding: 8px 32px;
+  width: 187px;
+  height: 36px;
 }
 
