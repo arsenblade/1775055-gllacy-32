@@ -19,7 +19,7 @@
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
-.html{
+.html {
   height: 100%;
 }
 .visually-hidden {
@@ -32,7 +32,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-body{
+body {
   margin:0;
   display: flex;
   flex-direction: column;
@@ -42,32 +42,28 @@ body{
   line-height:22px;
   color:#2D3440;
   background-color: #FEAFC3;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 .main-container {
   flex-grow: 1;
 }
-a{
+a {
   font-size: 16px;
   line-height: 20px;
   color:#2D3440;
   text-decoration: none;
 }
-li{
+li {
   list-style: none;
 }
-.navigation{
+.navigation {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.header{
+.header {
   margin-bottom: 45px;
 }
-.header-contacts-logo{
+.header-contacts-logo {
   margin-right: 16px;
   margin-top:24px;
 }
@@ -79,32 +75,28 @@ li{
   padding: 0;
   flex-wrap: wrap;
   width: 400px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.navigation-user{
+.navigation-user {
   width: 261px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.navigation-link{
+.navigation-link {
   display: block;
   color:#2D3440;
   text-decoration: none;
   padding: 8px 16px;
 }
-.navigation-user li{
+.navigation-user li {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
-.header-contacts-address-phone{
+.header-contacts-address-phone {
   margin-top:42px;
   margin-left: 198px;
   font-weight: 700;
   color:#2D3440;
   text-decoration: none;
 }
-.container{
+.container {
   width: 1170px;
   margin:0 auto;
 }
@@ -112,81 +104,90 @@ li{
   display: flex;
   flex-direction: row-reverse;
   margin-bottom:80px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.slider-image{
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+.slider-image {
 }
-.slider-button{
+.slider-button {
   align-self: center;
 }
-.slider-button-order{
+.slider-button-order {
   align-self: center;
 }
-.slider-pagination-photo{
+.slider-pagination-photo {
   align-self: flex-end;
   order: 1;
 }
-.social-list{
+.social-list {
   align-self: flex-end;
   order: -1;
 }
-.present{
+.present {
   margin-bottom: 80px;
 }
-.present-container{
+.present-container {
   display: flex;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.raspberries{
+.present-item {
+  width: 570px;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 268px;
+  border-radius: 16px;
+}
+.raspberries {
   background: #FF7799 url("../image/raspberries.png") no-repeat;
   background-position: right bottom;
-  width: 570px;
-  height: 268px;
-  border-radius: 16px;
   margin-right: 30px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.marshmallows{
+.marshmallows {
   background: #FF7799 url("../image/marchmalloy.png") no-repeat;
   background-position: right bottom;
-  width: 570px;
-  height: 268px;
-  border-radius: 16px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.present-title{
+
+.present-title {
   margin: 0 auto;
   font-family: "Inter";
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
   line-height: 46px;
   margin-bottom:56px;
   width: 443px;
   text-align: center;
   font-weight: 900;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.present-button{
+.presen-item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.raspberries-description{
+  width: 321px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.marshmallows-description{
+  width: 294px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.present-button {
   left:40px;
   bottom: 40px;
 }
-.button-link{
+.button-link {
   font-weight: 700;
   background: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding:12px 32px;
 }
-.product-title{
+.product-title {
   margin: 0 auto;
   width: 527px;
   text-align: center;
@@ -196,55 +197,53 @@ font-size: 32px;
   font-size: 32px;
   line-height: 46px;
   margin-bottom: 107px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.product-card{
+.product-card {
   display: flex;
   flex-direction: column;
 }
-.product-card-title{
+.product-card-title {
   margin:0;
   margin-bottom: 8px;
 }
-.product-card-image{
+.product-card-image {
   margin-top:-51px;
   margin-left:auto;
   margin-right: auto;
   border-radius: 50%;
 }
-.product-list{
+.product-list {
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.product-list li{
+.product-list li {
   background: white;
   width: 270px;
   height: 281px;
   border-radius: 8px;
 }
-.product-card-description{
+.product-card-description {
   margin-bottom: 20px;
 }
-.product-card-link, .product-card-price, .product-card-description{
+.product-card-link, .product-card-price, .product-card-description {
   text-align:center;
 }
-.prodact-container{
+.product-container {
   margin-bottom:80px;
 }
 
-.about-us-border{
+.about-us-border {
   background:url("../image/waferFon.png");
   padding: 24px 24px;
   margin: 0;
   margin-bottom: 80px;
   border-radius: 16px;
 }
-.about-us{
+.about-us {
   background:#FCFCFC;
   border-radius: 16px;
   width: 1122px;
@@ -252,19 +251,17 @@ font-size: 32px;
   padding: 0;
   padding-top:56px;
 }
-.about-us-list{
+.about-us-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.about-us-list li{
+.about-us-list li {
   width: 442px;
 
 }
-.about-us-title{
+.about-us-title {
   text-align: center;
   margin:0 auto;
   margin-bottom:56px;
@@ -275,23 +272,23 @@ font-size: 32px;
   font-size: 32px;
   line-height: 46px;
 }
-.about-block1{
+.about-block1 {
   list-style-image: url("../image/iceIcon.svg") ;
 
 }
-.about-block2{
+.about-block2 {
   list-style-image: url("../image/Cow.svg");
 
 }
-.about-block3{
+.about-block3 {
   list-style-image: url("../image/leaf.svg");
 
 }
-.about-block4{
+.about-block4 {
   list-style-image: url("../image/thermom.svg");
 
 }
-.new-in-store{
+.new-in-store {
   background-image: url("../image/backgroundIcecream\ .jpg");
   display: flex;
   flex-direction: column;
@@ -301,26 +298,22 @@ font-size: 32px;
   border-radius: 16px;
   box-sizing: border-box;
 }
-.new-in-store-description{
+.new-in-store-description {
   margin-bottom: 12px;
 }
-.new-in-store-link{
+.new-in-store-link {
   width: 303px;
   margin-bottom: 62px;
-}
-.new-in-store-link{
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
-.promotions-in-our-store{
+.promotions-in-our-store {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.fon-mailing{
+.fon-mailing {
   background:url("../image/FonMail.jpg") no-repeat;
   border-radius: 16px;
   margin: 0;
@@ -328,7 +321,7 @@ font-size: 32px;
   padding: 6px 6px;
 }
 
-.mailing{
+.mailing {
   background:white;
   border-radius: 16px;
   box-sizing: border-box;
@@ -336,13 +329,12 @@ font-size: 32px;
   margin: 0;
   padding: 26px 26px;
 }
-
-.mailing-form{
+.mailing-form {
   display: flex;
   justify-content: flex-end;
   margin-top: 42px;
 }
-.delivery{
+.delivery {
   background:url("../image/backgroundIcecream2.jpg");
   display: flex;
   justify-content: space-around;
@@ -351,19 +343,24 @@ font-size: 32px;
   margin-bottom: 80px;
   width: 1170px;
 }
-.appointment-form{
+.appointment-form {
   background: #FCFCFC;
   border-radius: 8px;
   margin: 64px 0;
   width: 500px;
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
 }
-.delivery-title{
+.delivery-title {
   width: 356px;
   font-weight: 900;
 }
-.delivery-descriptoin{
+.delivery-descriptoin {
   width: 371px;
+}
+.link-color{
+  background: #FF2F64;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 .contact-us {
   background: url("../image/backgroundIcecream3.jpg");
@@ -372,7 +369,7 @@ font-size: 32px;
   padding: 64px;
   box-sizing: border-box;
 }
-.contact-us-form{
+.contact-us-form {
   background: #FCFCFC;
   width: 343px;
   margin:0;
@@ -382,15 +379,41 @@ font-size: 32px;
   box-sizing: border-box;
 
 }
-.breadcrumbs li{
+.breadcrumbs li {
   text-decoration:underline;
   font-weight: bold;
 }
-.catalog-filter-group{
+.catalog-filter {
+  display: flex;
+  margin-bottom: 100px;
+  width: 810px;
+  flex-wrap: wrap;
+}
+.catalog-filter-group:nth-child(1){
+  width: 196px;
+  padding: 0;
+  margin: 0;
+}
+.catalog-filter-group:nth-child(2){
+  width: 196px;
+  padding: 0;
+  margin: 0;
+}
+.catalog-filter-group:nth-child(3){
+  width: 367px;
+  padding: 0;
+  margin: 0;
+}
+.catalog-filter-group:nth-child(4){
+  width: 596px;
+  padding: 0;
+  margin: 0;
+}
+.catalog-filter-group {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
 }
-.catalog-filter-dispatch{
+.catalog-filter-dispatch {
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   border-radius: 20px;
@@ -398,27 +421,58 @@ font-size: 32px;
   width: 187px;
   height: 36px;
 }
-.footer{
+.footer {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
-.footer-social{
+.footer-social {
   margin-right: 300px;
   width: 104px;
 }
-.footer-about-us{
+.footer-about-us {
   margin-right: 200px;
   width: 356px;
 }
-.footer-about-us-list{
+.footer-about-us-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
-.made-in{
+.made-in {
   width: 193px;
 }
-
+.catalog-filter-fatness-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-filter-fillers-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.catalog-title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.pagination-container{
+  display: flex;
+  margin-bottom: 80px;
+}
+.pagination-list{
+  display: flex;
+  width: 195px;
+  padding: 0;
+  margin-left: auto;
+}
