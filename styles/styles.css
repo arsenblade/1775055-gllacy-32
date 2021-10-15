@@ -2,22 +2,51 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+.html{
+  height: 100%;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family:"Inter",sans-serif;
   font-size:16px;
   line-height:22px;
   color:#2D3440;
   background-color: #FEAFC3;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.main-container {
+  flex-grow: 1;
 }
 a{
   font-size: 16px;
@@ -28,36 +57,124 @@ a{
 li{
   list-style: none;
 }
+.navigation{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.header{
+  margin-bottom: 45px;
+}
+.header-contacts-logo{
+  margin-right: 16px;
+  margin-top:24px;
+}
+.navigation-list {
+  display: flex;
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 10px;
+  padding: 0;
+  flex-wrap: wrap;
+  width: 400px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.navigation-user{
+  width: 261px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 .navigation-link{
+  display: block;
   color:#2D3440;
   text-decoration: none;
+  padding: 8px 16px;
 }
 .navigation-user li{
   background: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
 .header-contacts-address-phone{
+  margin-top:42px;
+  margin-left: 198px;
   font-weight: 700;
   color:#2D3440;
   text-decoration: none;
 }
-.raspberries{
-  background-color: #FF7799;
-  width: 570px;
-  height: 268px;
-  border-radius: 16px;
-  position: relative;
+.container{
+  width: 1170px;
+  margin:0 auto;
 }
-
-.marshmallows{
-  background: #FF7799;
+.slider-pagination-section {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom:80px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.slider-image{
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.slider-button{
+  align-self: center;
+}
+.slider-button-order{
+  align-self: center;
+}
+.slider-pagination-photo{
+  align-self: flex-end;
+  order: 1;
+}
+.social-list{
+  align-self: flex-end;
+  order: -1;
+}
+.present{
+  margin-bottom: 80px;
+}
+.present-container{
+  display: flex;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.raspberries{
+  background: #FF7799 url("../image/raspberries.png") no-repeat;
+  background-position: right bottom;
   width: 570px;
   height: 268px;
   border-radius: 16px;
-  position: relative;
+  margin-right: 30px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.marshmallows{
+  background: #FF7799 url("../image/marchmalloy.png") no-repeat;
+  background-position: right bottom;
+  width: 570px;
+  height: 268px;
+  border-radius: 16px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.present-title{
+  margin: 0 auto;
+  font-family: "Inter";
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+  line-height: 46px;
+  margin-bottom:56px;
+  width: 443px;
+  text-align: center;
+  font-weight: 900;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 .present-button{
-  position: absolute;
   left:40px;
   bottom: 40px;
 }
@@ -69,128 +186,201 @@ li{
   border-radius: 26px;
   padding:12px 32px;
 }
+.product-title{
+  margin: 0 auto;
+  width: 527px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 107px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.product-card{
+  display: flex;
+  flex-direction: column;
+}
+.product-card-title{
+  margin:0;
+  margin-bottom: 8px;
+}
+.product-card-image{
+  margin-top:-51px;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.product-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 .product-list li{
   background: white;
-  position: relative;
   width: 270px;
   height: 281px;
   border-radius: 8px;
 }
-.product-card-link, .product-card-price{
-  position:absolute;
+.product-card-description{
+  margin-bottom: 20px;
+}
+.product-card-link, .product-card-price, .product-card-description{
   text-align:center;
-  bottom: 40px;
 }
-.product-card-image{
-  position: absolute;
-  left:51px;
-  top:-51px;
+.prodact-container{
+  margin-bottom:80px;
 }
-.product-card-button{
-  position: absolute;
-  bottom:40px;
-  right:20px;
-}
+
 .about-us-border{
   background:url("../image/waferFon.png");
+  padding: 24px 24px;
+  margin: 0;
+  margin-bottom: 80px;
   border-radius: 16px;
-  width: 1170px;
-  height: 480px;
-  position:relative;
-  top:6px;
 }
 .about-us{
   background:#FCFCFC;
   border-radius: 16px;
   width: 1122px;
-  height: 432px;
-  position: absolute;
-  top:24px;
-  left:24px;
+  margin: 0;
+  padding: 0;
+  padding-top:56px;
 }
 .about-us-list{
-  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
+.about-us-list li{
+  width: 442px;
 
+}
 .about-us-title{
   text-align: center;
+  margin:0 auto;
+  margin-bottom:56px;
+  font-family: "Inter";
+  font-style: normal;
+  width: 994px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 }
 .about-block1{
-  list-style-image: url("../image/iceIcon.svg");
+  list-style-image: url("../image/iceIcon.svg") ;
+
 }
 .about-block2{
   list-style-image: url("../image/Cow.svg");
+
 }
 .about-block3{
   list-style-image: url("../image/leaf.svg");
+
 }
 .about-block4{
   list-style-image: url("../image/thermom.svg");
+
 }
 .new-in-store{
   background-image: url("../image/backgroundIcecream\ .jpg");
+  display: flex;
+  flex-direction: column;
+  padding-left:32px;
+  padding-top:32px;
   width: 570px;
-  height: 216px;
   border-radius: 16px;
+  box-sizing: border-box;
+}
+.new-in-store-description{
+  margin-bottom: 12px;
+}
+.new-in-store-link{
+  width: 303px;
+  margin-bottom: 62px;
 }
 .new-in-store-link{
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
+.promotions-in-our-store{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 .fon-mailing{
   background:url("../image/FonMail.jpg") no-repeat;
   border-radius: 16px;
-  width: 570px;
-  height: 220px;
-  position:relative;
-  top:6px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 6px 6px;
 }
+
 .mailing{
   background:white;
   border-radius: 16px;
+  box-sizing: border-box;
   width: 558px;
-  height: 208px;
-  position:absolute;
-  top:6px;
-  left:6px;
+  margin: 0;
+  padding: 26px 26px;
+}
+
+.mailing-form{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 42px;
 }
 .delivery{
   background:url("../image/backgroundIcecream2.jpg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 16px;
+  margin-bottom: 80px;
   width: 1170px;
-  height: 534px;
-  position: relative;
 }
 .appointment-form{
   background: #FCFCFC;
   border-radius: 8px;
+  margin: 64px 0;
   width: 500px;
-  height: 406px;
-  position: absolute;
-  right:64px;
-  top:64px;
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
 }
-.contact-us{
-  background:url("../image/backgroundIcecream3.jpg");
+.delivery-title{
+  width: 356px;
+  font-weight: 900;
+}
+.delivery-descriptoin{
+  width: 371px;
+}
+.contact-us {
+  background: url("../image/backgroundIcecream3.jpg");
   width: 1170px;
-  height: 492px;
   border-radius: 16px;
-  position: relative;
+  padding: 64px;
+  box-sizing: border-box;
 }
 .contact-us-form{
   background: #FCFCFC;
   width: 343px;
-  height: 364px;
+  margin:0;
   box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
-  position: absolute;
-  left: 64px;
-  top:64px;
+  padding:40px;
+  box-sizing: border-box;
+
 }
 .breadcrumbs li{
   text-decoration:underline;
@@ -207,5 +397,28 @@ li{
   padding: 8px 32px;
   width: 187px;
   height: 36px;
+}
+.footer{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.footer-social{
+  margin-right: 300px;
+  width: 104px;
+}
+.footer-about-us{
+  margin-right: 200px;
+  width: 356px;
+}
+.footer-about-us-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.made-in{
+  width: 193px;
 }
 
