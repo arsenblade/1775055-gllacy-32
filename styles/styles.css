@@ -820,6 +820,7 @@ li {
 .catalog-filter-group {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
+  border: none;
 }
 .catalog-filter-dispatch {
   background: rgba(252, 252, 252, 0.3);
@@ -954,10 +955,12 @@ li {
 .catalog-filter-fatness-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 .catalog-filter-fillers-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 .breadcrumbs {
   display: flex;
@@ -1030,8 +1033,9 @@ li {
   position: relative;
   height: 4px;
   margin-bottom: 16px;
-  background-color: #565C66;
+  background-color: rgba(86, 92, 102,0.3);
   border-radius: 2px;
+
 }
 .range-bar {
   position: absolute;
@@ -1046,4 +1050,12 @@ li {
   border: 2px solid #242424;
   border-radius: 50%;
   cursor: pointer;
+}
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
