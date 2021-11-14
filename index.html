@@ -21,6 +21,28 @@
           <a class="navigation-link " href="catalog.html">
             Каталог
           </a>
+          <div class="popover popover-catalog">
+            <div class="popover-content-catalog">
+              <a class="new-in-catalog-link" href="#">
+                Новинки
+              </a>
+              <span class="popover-catalog-line"></span>
+              <ul class="popover-catalog-list">
+                <li class="popover-catalog-item">
+                  <a class="category-link" href="#">Сливочное</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="category-link chosen-category" href="#">Щербеты</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="category-link" href="#">Фруктовый&nbspлед</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="category-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="delivety.html">
@@ -45,6 +67,12 @@
             </svg>
             <span class="visually-hidden">Поиск</span>
           </a>
+          <div class="popover povover-search">
+            <div class="popover-content-search">
+              <input class="field-to-fill popover-search-site" type="search" placeholder="Поиск по сайту" name="
+              site-search" id="site-search">
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-user-link navigation-entrance" href="#">
@@ -56,6 +84,19 @@
             </svg>
             Вход
           </a>
+          <div class="popover popover-authorization">
+            <div class="popover-content-authorization">
+              <h2 class="popover-authorization-title">Личный кабинет</h2>
+              <form class="authorization-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="field-to-fill login" type="email" placeholder="email@example.com" name="site-login"
+                  id="site-login">
+                <input class="field-to-fill password" type="password" name="site-authorization" id="site-authorization">
+                <input class="button-link-pink buttom-enter" type="submit" value="Войти">
+              </form>
+              <a class="forgot-password-link" href="#">Забыли пароль?</a>
+              <a class="registration" href="#">Регистрация</a>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-user-link navigation-basket" href="#">
@@ -66,10 +107,43 @@
                 fill="#2D3440" />
             </svg>
             Пусто
-            <span class="visually-hidden">Корзина</span>
           </a>
+          <div class="popover popover-basket">
+            <div class="popover-content-basket">
+              <h2 class="popover-basket-title">Корзина</h2>
+              <ul class="products-in-basket-list">
+                <li class="products-in-basket-item">
+                  <img class="product-basket-image" src="image/iceCreamRasp.png" alt="мороженное" width="46"
+                    height="46">
+                  <span class="container-product-discription">
+                    <h3 class="popover-product-basket-title">Малинка</h3>
+                    <span class="popover-product-basket-quantily">1 кг х 310 ₽</span>
+                  </span>
+                  <b class="basket-price-product">310 ₽</b>
+                  <button class="remove-from-basket">
+                    <span class="remove-from-basket-mark"></span>
+                  </button>
+                </li>
+                <li class="products-in-basket-item">
+                  <img class="product-basket-image" src="image/iceCreamBubbleGum.png" alt="мороженное" width="46"
+                    height="46">
+                  <span class="container-product-discription">
+                    <h3 class="popover-product-basket-title">Бабл-гам</h3>
+                    <span class="popover-product-basket-quantily">1,5 кг х 320 ₽</span>
+                  </span>
+                  <b class="basket-price-product">480 ₽</b>
+                  <button class="remove-from-basket">
+                    <span class="remove-from-basket-mark"></span>
+                  </button>
+                </li>
+              </ul>
+              <span class="decorate-line"></span>
+              <div class="container-checkout">
+                <a class="button-link-pink button-checkout" href="#">Оформить заказ</a>
+                <b class="total-price">Итого: 790 ₽</b>
+              </div>
+              <span class="visually-hidden">Корзина</span>
         </li>
-      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -77,7 +151,16 @@
       <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
       <section class="slider-pagination-section">
         <div class="slider-block">
-          <img class="slider-image" src="image/icecream.png" alt="Примеры мороженного" width="305" height="510">
+          <div class="container-slider-image current-under">
+            <img class="slider-image current-image" src="image/icecream1.png" alt="Примеры мороженного" width="305"
+              height="510">
+          </div>
+          <div class="container-slider-image slider-image-average">
+            <img class="slider-image" src="image/icecream2.png" alt="Примеры мороженного" width="66" height="115">
+          </div>
+          <div class="container-slider-image">
+            <img class="slider-image" src="image/icecream3.png" alt="Примеры мороженного" width="66" height="115">
+          </div>
           <button class="slider-button slider-prev" type="button">
             <svg class="slider-icon" aria-hidden="true" focusable="false" width="6" height="12" viewBox="0 0 6 12"
               fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,28 +178,35 @@
             <span class="visually-hidden">Следующее фото</span>
           </button>
         </div>
-        <ul class="slider-text-list">
-          <li class="slider-text-item">
-            <h2>Нежный пломбир
-              с клубничным джемом</h2>
-            <p>Натуральное мороженое из свежих сливок
-              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-          </li>
-          <li class="slider-text-item">
-            <h2>Сливочное мороженое со вкусом банана</h2>
-            <p>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
-              летний день. </p>
-          </li>
-          <li class="slider-text-item">
-            <h2>Карамельный пломбир
-              с маршмеллоу</h2>
-            <p>Необычный сладкий дессерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех
-              возрастов. </p>
-          </li>
-        </ul>
+        <div class="container-slider-list-text">
+          <ul class="slider-text-list">
+            <li class="slider-text-item current-text">
+              <h2 class="slider-text-item-title">Нежный пломбир
+                с&nbspклубничным джемом</h2>
+              <p class="slider-text-item-description">Натуральное мороженое из свежих сливок
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+            </li>
+            <li class="slider-text-item">
+              <h2 class="slider-text-item-title">Сливочное мороженое со&nbspвкусом банана</h2>
+              <p class="slider-text-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
+                и
+                наслаждение даже в самый жаркий
+                летний день. </p>
+            </li>
+            <li class="slider-text-item">
+              <h2 class="slider-text-item-title">Карамельный пломбир
+                с&nbspмаршмеллоу</h2>
+              <p class="slider-text-item-description">Необычный сладкий дессерт с карамельный топпингом и кусочками
+                зефира
+                завоюет сердца сладкоежек всех
+                возрастов. </p>
+            </li>
+          </ul>
+          <a class="slider-button-order button-link-white" href="#">Заказать</a>
+        </div>
         <ol class="slider-pagination-list">
           <li class="slider-pagination-item">
-            <a class="slider-pagination-photo" href="#"><span class="visually-hidden">1 фото</span></a>
+            <a class="slider-pagination-photo current-photo" href="#"><span class="visually-hidden">1 фото</span></a>
           </li>
           <li class="slider-pagination-item">
             <a class="slider-pagination-photo" href="#"><span class="visually-hidden">2 фото</span></a>
@@ -125,8 +215,7 @@
             <a class="slider-pagination-photo" href="#"><span class="visually-hidden">3 фото</span></a>
           </li>
         </ol>
-        <a class="slider-button-order button-link-white" href="#">Заказать</a>
-        <ul class="social-list">
+        <ul class="social-list slider-social">
           <li class="social-item">
             <a class="social-button-vk social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
@@ -169,8 +258,8 @@
             <h3 class="presen-item-title">Малинка даром!</h3>
             <p class="raspberries-description">
               При покупке 2 кг любого фруктового
-              мороженого, добавим в ваш заказ
-              банку малинового варенья бесплатно.
+              мороженого, добавим в ваш заказ банку
+              малинового варенья бесплатно.
             </p>
             <a class="present-button button-link-white" href="#">Хочу подарок</a>
           </div>
@@ -225,7 +314,7 @@
               <h3 class="product-card-title">Черника</h3>
             </a>
             <span class="product-card-description">Крем-брюле
-              с черничным джемом</span>
+              с&nbspчерничным джемом</span>
             <b class="product-card-price">330 ₽/кг</b>
             <a class="product-card-button button" href="#">
               <span class="visually-hidden">Купить</span>
@@ -243,7 +332,7 @@
               <h3 class="product-card-title">Бабл-гам</h3>
             </a>
             <span class="product-card-description">Ванильный пломбир
-              со сладкой посыпкой</span>
+              со&nbspсладкой посыпкой</span>
             <b class="product-card-price">320 ₽/кг</b>
             <a class="product-card-button button" href="#">
               <span class="visually-hidden">Купить</span>
@@ -268,13 +357,13 @@
             </li>
             <li class="about-us-item"> <span class="about-us-item-text">Закупка ингредиентов производится
                 только
-                у проверенных фермерских хозяйств, с которыми
+                у&nbspпроверенных фермерских хозяйств, с которыми
                 нас связывает долговременное сотрудничество.</span>
             </li>
             <li class="about-us-item"> <span class="about-us-item-text">Для приготовления мороженого
                 используются сливки и
                 молоко высочайшего качества. Все ингредиенты
-                и добавки произведены из натурального сырья.</span>
+                и&nbspдобавки произведены из натурального сырья.</span>
             </li>
             <li class="about-us-item"> <span class="about-us-item-text">Доставка нашего мороженого
                 осуществляется в
@@ -289,13 +378,13 @@
         <div class="new-in-store">
           <span class="new-in-store-description">Новое в нашем блоге</span>
           <a class="new-in-store-link" href="#">10 способов сервировки фруктовых щербетов
-            к столу</a>
+            к&nbspстолу</a>
         </div>
         <div class="fon-mailing">
           <div class=mailing>
             <span class="mailing-descriptoin">
               Подпишитесь на нашу сладкую рассылку и будьте всегда
-              в курсе всего самого вкусного, что у нас происходит. Обещаем
+              в&nbspкурсе всего самого вкусного, что у нас происходит. Обещаем
               не спамить и не слать всякой ненужной ерунды. Честно =)
             </span>
             <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -319,7 +408,7 @@
         </div>
         <div class="appointment-form-container">
           <p class="delivery-descriptoin">
-            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+            Укажите адрес и дату доставки, и мы свяжемся с&nbspвами, чтобы подтвердить заказ.
           </p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-form-date field-group">
@@ -357,7 +446,7 @@
           </p>
           <address class="contact-us-address">
             <b class="contact-us-address-text">
-              наб. Реки Карповки, 5 лит П, Санкт-Петербург
+              наб. Реки Карповки, 5&nbspлит&nbspП, Санкт-Петербург
             </b>
             <p class="contact-us-phone-text">
               Для заказов по телефону:
