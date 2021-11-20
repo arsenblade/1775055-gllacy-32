@@ -525,7 +525,7 @@ li {
 .product-list {
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   display: grid;
   grid-template-columns: repeat(4, 270px);
   row-gap: 90px;
@@ -604,7 +604,7 @@ li {
 }
 
 .about-us-border {
-  background: url("../image/waferFon.png");
+  background: url("../image/wafer-fon.png");
   padding: 24px 24px;
   margin: 0;
   width: 1122px;
@@ -656,7 +656,7 @@ li {
 }
 
 .new-in-store {
-  background: #fcfcfc url("../image/backgroundIcecream.jpg") no-repeat;
+  background: #fcfcfc url("../image/background-icecream-new-strore.jpg") no-repeat;
   display: flex;
   flex-direction: column;
   padding-left: 32px;
@@ -681,11 +681,11 @@ li {
 .promotions-in-our-store {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
 .fon-mailing {
-  background: url("../image/fonMail.jpg") no-repeat;
+  background: url("../image/fon-mail.jpg") no-repeat;
   border-radius: 16px;
   margin: 0;
   width: 558px;
@@ -705,11 +705,13 @@ li {
   grid-template-columns: 332px 152px;
   margin-top: 42px;
   column-gap: 24px;
+  align-items: flex-start;
 }
 
 .dispatch {
   justify-self: flex-end;
   align-self: center;
+  white-space: normal;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -722,7 +724,7 @@ li {
 }
 
 .delivery {
-  background: url("../image/backgroundIcecream2.jpg") no-repeat;
+  background: url("../image/background-icecream-delivery.jpg") no-repeat;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -766,6 +768,7 @@ li {
   line-height: 20px;
   border-radius: 4px;
   color: #2d3440;
+  outline: none;
 }
 
 .field-to-fill:hover {
@@ -825,7 +828,6 @@ li {
 
 .appointment-label {
   font-weight: bold;
-  margin-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -833,7 +835,8 @@ li {
 .sending {
   justify-self: center;
   grid-column: 1/-1;
-  margin-top: 32px;
+  white-space: normal;
+  margin-top: 30px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -862,7 +865,7 @@ li {
 }
 
 .contact-us {
-  background: #ff2f64 url("../image/backgroundIcecream3.jpg") no-repeat;
+  background: #ff2f64 url("../image/background-icecream-contact-us.jpg") no-repeat;
   width: 1042px;
   border-radius: 16px;
   padding: 64px;
@@ -962,14 +965,11 @@ li {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  row-gap: 44px;
+  row-gap: 16px;
+  align-items: flex-end;
 }
 
 .catalog-filter-group {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   border: none;
   margin: 0;
@@ -983,9 +983,7 @@ li {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  padding: 8px 32px;
-  width: 187px;
-  height: 36px;
+  padding: 8px 54px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1154,7 +1152,7 @@ li {
 
 .catalog-title {
   margin: 0;
-  margin-bottom: 68px;
+  margin-bottom: 40px;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -1183,6 +1181,7 @@ li {
   margin: 0;
   padding: 0;
   align-self: center;
+  margin-right: -6px;
 }
 
 .pagination-link {
@@ -1216,37 +1215,42 @@ li {
 }
 
 .pagination-prev {
-  background: url("../image/arrowLeft.svg") no-repeat center;
+  background: url("../image/arrow-left.svg") no-repeat center;
 }
 
 .pagination-next {
-  background: url("../image/arrowRight.svg") no-repeat center;
+  background: url("../image/arrow-right.svg") no-repeat center;
 }
 
 .range-scale {
   position: relative;
-  height: 4px;
+  height: 2px;
   background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
 }
 
 .range {
-  width: calc(100% - 32px);
-  margin-right: 16px;
-  margin-left: 16px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 16px;
+  padding-bottom: 18px;
 }
 
 .range-bar {
   position: absolute;
-  height: 4px;
+  height: 2px;
   background-color: #565c66;
+  width: 41%;
+  left: 21%;
 }
 
 .range-toggle {
   position: absolute;
   padding: 2px;
   background: #fcfcfc;
-  border: 7px solid #2d3440;
+  border: 6px solid #2d3440;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -1264,24 +1268,23 @@ li {
 
 .range-toggle:hover {
   background: #2d3440;
-  border: 7px solid #fcfcfc;
+  border: 6px solid #fcfcfc;
 }
 
 .range-toggle:active {
   background: #2d3440;
-  border: 7px solid #2d3440;
+  border: 6px solid #2d3440;
 }
 
 .range-toggle:focus {
   background: #2d3440;
-  border: 7px solid #fcfcfc;
+  border: 6px solid #fcfcfc;
   box-shadow: 0 0 0 2px #2d3440;
 }
 
 .catalog-filter-title {
-  position: absolute;
   margin: 0;
-  top: -28px;
+  margin-bottom: 8px;
   padding-left: 16px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1343,6 +1346,8 @@ li {
 }
 
 .catalog-filter-fatness-list {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -1353,14 +1358,28 @@ li {
 }
 
 .catalog-filter-fatness-item {
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .catalog-filter-fatness-item:last-child {
   margin-right: 0;
 }
 
+.catalog-filter-fatness-title {
+  width: 350px;
+}
+
+.catalog-range-scale-title {
+  width: 180px;
+}
+
+.catalog-filter-fillers-title {
+  width: 580px ;
+}
+
 .catalog-filter-fillers-list {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -1384,21 +1403,22 @@ li {
 
 .range-group {
   width: 196px;
-  height: 36px;
 }
 
 .select-control {
+  font-family: "Inter", sans-serif;
   width: 100%;
   height: 100%;
   border-radius: 20px;
   padding: 8px 16px;
-  padding-right: 62px;
+  padding-right: 56px;
   font-size: 14px;
   line-height: 20px;
   border: none;
   outline: none;
-  background: transparent url("../image/arrowbottom.svg") no-repeat 170px 16px;
+  background: url("../image/arrow-bottom.svg") no-repeat 170px 16px;
   appearance: none;
+  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .select-control:hover {
@@ -1408,6 +1428,10 @@ li {
 .select-control:focus {
   background-color: rgba(252, 252, 252, 0.4);
   box-shadow: inset 0 0 0 2px #fcfcfc;
+}
+
+.catalog-select-title {
+  width: 180px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1717,6 +1741,11 @@ li {
   box-shadow: inset 0 0 0 1px #b9b9b9;
 }
 
+.popover-catalog {
+  left: 0;
+  right: auto;
+}
+
 .category-link {
   display: block;
   padding: 8px 16px;
@@ -1871,13 +1900,14 @@ li {
   display: none;
 }
 
-.popover-visible {
+.popover-active {
   display: block;
 }
 
 .container-appointment-info {
   position: relative;
   padding-right: 13px;
+  margin-bottom: 8px;
 }
 
 .pagination-item:first-child {
@@ -1885,5 +1915,51 @@ li {
 }
 
 .pagination-item:last-child {
-  margin-left: 13px;
+  margin-left: 15px;
+}
+
+.pagination-item:nth-child(3) {
+  margin-right: 2px;
+}
+
+.pagination-item:nth-child(4) {
+  margin-right: 4px;
+}
+
+
+.pagination-item:nth-child(5) {
+  margin-right: 2px;
+}
+
+
+.popover-basket-empty-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.popover-basket-empty {
+  width: 192px;
+  padding: 48px;
+}
+
+.appointment-label-phone {
+  margin-bottom: 8px;
+}
+
+.footer-catalog {
+  margin-top: 44px;
+}
+
+.catalog-made-in-logo {
+  margin-top: 48px;
+}
+
+.current-navigation-link {
+  background: #FF4A78;
+  border-radius: 26px;
 }

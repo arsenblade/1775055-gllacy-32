@@ -16,27 +16,36 @@
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link " href="catalog.html">
+          <a class="navigation-link current-navigation-link" href="catalog.html">
             Каталог
           </a>
-          <div class="popover popover-catalog popover-visible">
+          <div class="popover popover-catalog">
             <div class="popover-content-catalog">
               <a class="new-in-catalog-link" href="#">
                 Новинки
+                <span class="visually-hidden">Новое в каталоге.</span>
               </a>
               <span class="popover-catalog-line"></span>
               <ul class="popover-catalog-list">
                 <li class="popover-catalog-item">
-                  <a class="category-link" href="#">Сливочное</a>
+                  <a class="category-link" href="#">Сливочное
+                    <span class="visually-hidden">Сливочное мороженное.</span>
+                  </a>
                 </li>
                 <li class="popover-catalog-item">
-                  <a class="category-link chosen-category" href="#">Щербеты</a>
+                  <a class="category-link chosen-category" href="#">Щербеты
+                    <span class="visually-hidden">Щербеты.</span>
+                  </a>
                 </li>
                 <li class="popover-catalog-item">
-                  <a class="category-link" href="#">Фруктовый&nbsp;лед</a>
+                  <a class="category-link" href="#">Фруктовый&nbsp;лед
+                    <span class="visually-hidden">Фруктовый&nbsp;лед.</span>
+                  </a>
                 </li>
                 <li class="popover-catalog-item">
-                  <a class="category-link" href="#">Мелорин</a>
+                  <a class="category-link" href="#">Мелорин
+                    <span class="visually-hidden">Мелорин.</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -65,12 +74,14 @@
                 d="M1.91286 7.24625C1.91286 4.30073 4.30068 1.91292 7.2462 1.91292C10.1917 1.91292 12.5795 4.30073 12.5795 7.24625C12.5795 8.68547 12.0095 9.99154 11.0828 10.951C11.0582 10.9695 11.0346 10.99 11.0123 11.0124C10.9899 11.0347 10.9694 11.0583 10.9509 11.0829C9.99146 12.0095 8.6854 12.5796 7.2462 12.5796C4.30068 12.5796 1.91286 10.1918 1.91286 7.24625ZM11.4653 12.4082C10.3161 13.3487 8.84703 13.9129 7.2462 13.9129C3.5643 13.9129 0.579529 10.9281 0.579529 7.24625C0.579529 3.56435 3.5643 0.579582 7.2462 0.579582C10.9281 0.579582 13.9129 3.56435 13.9129 7.24625C13.9129 8.84711 13.3486 10.3162 12.4081 11.4654L15.2176 14.2749C15.4779 14.5352 15.4779 14.9573 15.2176 15.2177C14.9572 15.478 14.5351 15.478 14.2748 15.2177L11.4653 12.4082Z"
                 fill="#2D3440" />
             </svg>
-            <span class="visually-hidden">Поиск</span>
+            <span class="visually-hidden">Поиск.</span>
           </a>
           <div class="popover povover-search">
             <div class="popover-content-search">
-              <input class="field-to-fill popover-search-site" type="search" placeholder="Поиск по сайту" name="
-              site-search" id="site-search">
+              <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="field-to-fill popover-search-site" type="search" placeholder="Поиск по сайту" name="
+                site-search" id="site-search">
+              </form>
             </div>
           </div>
         </li>
@@ -102,15 +113,20 @@
           <a class="navigation-user-link navigation-basket" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="17" height="16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <path class="navigation-icon-basket" fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.31.49a.67.67 0 0 0 0 1.33h2.06l.54 2.7.01.05 1.1 5.44a1.97 1.97 0 0 0 1.96 1.6h6.32a1.97 1.97 0 0 0 1.96-1.6l1.05-5.47a.67.67 0 0 0-.66-.8H5.12l-.55-2.71a.67.67 0 0 0-.65-.54h-2.6Zm5.01 9.26L5.4 5.08h9.46l-.9 4.68a.64.64 0 0 1-.63.5H6.96a.64.64 0 0 1-.64-.5ZM5.21 14.2a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Zm7.17 0a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Z"
                 fill="#2D3440" />
-              <path class="navigation-icon-basket" fill-rule="evenodd" clip-rule="evenodd"
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M.65 1.16c0-.37.3-.67.66-.67h2.61c.32 0 .6.22.65.54l.55 2.72h10.53a.67.67 0 0 1 .66.8L15.27 10a1.97 1.97 0 0 1-1.97 1.6H6.98A1.97 1.97 0 0 1 5 10L3.92 4.57v-.05l-.55-2.7H1.31a.67.67 0 0 1-.66-.66Zm5.88 11.72a1.32 1.32 0 1 0 0 2.63 1.32 1.32 0 0 0 0-2.63Zm7.17 0a1.32 1.32 0 1 0 0 2.63 1.32 1.32 0 0 0 0-2.63Z"
                 fill="#2D3440" />
             </svg>
-            Пусто
+            2 товара
           </a>
+          <div class="popover popover-basket-empty">
+            <div class="popover-content-basket-empty">
+              <h2 class="popover-basket-empty-title">Ваша корзина пока пуста</h2>
+            </div>
+          </div>
           <div class="popover popover-basket">
             <div class="popover-content-basket">
               <h2 class="popover-basket-title">Корзина</h2>
@@ -123,7 +139,7 @@
                     <span class="popover-product-basket-quantily">1 кг х 310 ₽</span>
                   </div>
                   <b class="basket-price-product">310 ₽</b>
-                  <button class="remove-from-basket">
+                  <button class="remove-from-basket" type="button">
                     <span class="remove-from-basket-mark"></span>
                   </button>
                 </li>
@@ -135,7 +151,7 @@
                     <span class="popover-product-basket-quantily">1,5 кг х 320 ₽</span>
                   </div>
                   <b class="basket-price-product">480 ₽</b>
-                  <button class="remove-from-basket">
+                  <button class="remove-from-basket" type="button">
                     <span class="remove-from-basket-mark"></span>
                   </button>
                 </li>
@@ -145,7 +161,7 @@
                 <a class="button-link-pink button-checkout" href="#">Оформить заказ</a>
                 <b class="total-price">Итого: 790 ₽</b>
               </div>
-              <span class="visually-hidden">Корзина</span>
+              <span class="visually-hidden">Корзина.</span>
             </div>
           </div>
         </li>
@@ -154,7 +170,7 @@
   </header>
   <main class="main-inner">
     <div class="container">
-      <h1 class="inner-header-title visually-hidden">Каталог</h1>
+      <h1 class="inner-header-title visually-hidden">Каталог.</h1>
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -170,10 +186,10 @@
       </header>
       <h2 class="catalog-title">Сливочное мороженое</h2>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
           <fieldset class="catalog-filter-group">
-            <h3 class="catalog-filter-title">Сортировка:</h3>
+            <h3 class="catalog-filter-title catalog-select-title">Сортировка:</h3>
             <select class="select-control" id="sorting" name="sorting">
               <option value="popular">по популярности</option>
               <option value="cheap">Сначала дешёвое</option>
@@ -181,10 +197,10 @@
             </select>
           </fieldset>
           <fieldset class="catalog-filter-group range-group">
-            <h3 class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</h3>
+            <h3 class="catalog-filter-title catalog-range-scale-title">Цена: 100 ₽ – 500 ₽</h3>
             <div class="range">
               <div class="range-scale">
-                <div class="range-bar" style="left: 10%; width: 30%">
+                <div class="range-bar">
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
@@ -196,7 +212,7 @@
             </div>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <h3 class="catalog-filter-title">Жирность:</h3>
+            <h3 class="catalog-filter-title catalog-filter-fatness-title">Жирность:</h3>
             <ul class="catalog-filter-fatness-list">
               <li class="catalog-filter-fatness-item">
                 <label class="control">
@@ -254,7 +270,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <h3 class="catalog-filter-title">Наполнители:</h3>
+            <h3 class="catalog-filter-title catalog-filter-fillers-title">Наполнители:</h3>
             <ul class="catalog-filter-fillers-list">
               <li class="catalog-filter-fillers-item">
                 <label class="control">
@@ -361,7 +377,7 @@
             <div class="container-price">
               <b class="product-card-price">310 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -380,7 +396,7 @@
             <div class="container-price">
               <b class="product-card-price">340 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -400,7 +416,7 @@
             <div class="container-price">
               <b class="product-card-price">330 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -420,7 +436,7 @@
             <div class="container-price">
               <b class="product-card-price">320 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -439,7 +455,7 @@
             <div class="container-price">
               <b class="product-card-price">330 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -449,7 +465,7 @@
             </div>
           </li>
           <li class="product-card">
-            <img class="product-card-image" src="image/icecreambananaorig.png" alt="Описание картинки" width="190"
+            <img class="product-card-image" src="image/icecream-bananaorig.png" alt="Описание картинки" width="190"
               height="184">
             <a class="product-card-link" href="product.html">
               <h3 class="product-card-title">Банан</h3>
@@ -459,7 +475,7 @@
             <div class="container-price">
               <b class="product-card-price">340 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -478,7 +494,7 @@
             <div class="container-price">
               <b class="product-card-price">270 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -498,7 +514,7 @@
             <div class="container-price">
               <b class="product-card-price">300 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -517,7 +533,7 @@
             <div class="container-price">
               <b class="product-card-price">310 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -537,7 +553,7 @@
             <div class="container-price">
               <b class="product-card-price">320 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -556,7 +572,7 @@
             <div class="container-price">
               <b class="product-card-price">360 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -571,11 +587,11 @@
             <a class="product-card-link" href="product.html">
               <h3 class="product-card-title">Крем-брюле</h3>
             </a>
-            <span class="product-card-description">Классическое крем-брюле </span>
+            <span class="product-card-description">Классическое<br>крем-брюле </span>
             <div class="container-price">
               <b class="product-card-price">280 ₽/кг</b>
               <a class="product-card-button button" href="#">
-                <span class="visually-hidden">Купить</span>
+                <span class="visually-hidden">Купить.</span>
                 <svg class="product-card-icon" aria-hidden="true" focusable="false" width="15" height="14"
                   viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -590,27 +606,37 @@
           <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
+                <span class="visually-hidden">Предыдущая страница.</span>
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current">1
+                <span class="visually-hidden">Первая страница.</span>
+              </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link" href="#">2
+                <span class="visually-hidden">Вторая страница.</span>
+              </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link" href="#">3
+                <span class="visually-hidden">Третья страница.</span>
+              </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="pagination-link" href="#">4
+                <span class="visually-hidden">Четвертая страница.</span>
+              </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
+              <a class="pagination-link" href="#">5
+                <span class="visually-hidden">Пятая страница.</span>
+              </a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
+                <span class="visually-hidden">Следующая страница.</span>
               </a>
             </li>
           </ul>
@@ -620,7 +646,7 @@
   </main>
   <footer class="footer footer-line">
     <section class="footer-social">
-      <h2 class="page-footer-title visually-hidden">Наши соц сети</h2>
+      <h2 class="page-footer-title visually-hidden">Наши соц сети.</h2>
       <ul class="social-list">
         <li class="social-item">
           <a class="social-button-vk social-button" href="https://vk.com/htmlacademy">
@@ -657,8 +683,8 @@
         </li>
       </ul>
     </section>
-    <section class="footer-about-us">
-      <h2 class="visually-hidden">О нас</h2>
+    <section class="footer-about-us footer-catalog">
+      <h2 class="visually-hidden">О нас.</h2>
       <ul class="footer-about-us-list">
         <li class="footer-about-us-item">
           <a class="footer-about-us-link" href="#">
@@ -683,9 +709,9 @@
       </ul>
     </section>
     <section class="made-in">
-      <h2 class="page-footer-title visually-hidden">Сделано в</h2>
-      <a class="made-in-logo" href="https://htmlacademy.ru/study">
-        <img class="footer-logo-html-academy" src="image/logo_htmlacademy.svg" alt="Нет картинки" width="94"
+      <h2 class="page-footer-title visually-hidden">Сделано в.</h2>
+      <a class="made-in-logo catalog-made-in-logo" href="https://htmlacademy.ru/study">
+        <img class="footer-logo-html-academy" src="image/logo-htmlacademy.svg" alt="Нет картинки" width="94"
           height="28">
       </a>
       <p class="made-in-link-text">
