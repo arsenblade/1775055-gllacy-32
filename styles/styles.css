@@ -1374,7 +1374,7 @@ li {
 }
 
 .catalog-filter-fillers-title {
-  width: 580px ;
+  width: 580px;
 }
 
 .catalog-filter-fillers-list {
@@ -1498,6 +1498,7 @@ li {
   position: absolute;
   transform: scale(0.32);
   opacity: 0.3;
+  background-color: #feafc3;
 }
 
 .slider-image {
@@ -1960,6 +1961,6 @@ li {
 }
 
 .current-navigation-link {
-  background: #FF4A78;
+  background: #ff4a78;
   border-radius: 26px;
 }
